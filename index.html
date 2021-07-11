@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AruMyra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>AruMyra</title>
        <link rel="stylesheet" type="text/css" href="style.css">
       <link href="styles/style.css" rel="stylesheet">
 
 </head>
 <body>
-	<img src="images/Copen1.jpg" alt="Copenhegan" width="1920" height="1080"/>
-	
-</body>
-<div class="bgimg">
-  <div class="topleft">
-    <p>AruMyra</p>
-  </div>
-  <div class="middle">
-    <h1>Site is under in construction</h1>
-    <hr>
-    <p id="demo" style="font-size:20px"></p>
-  </div>
-  <div class="bottomleft">
-    <p>© 2021-2023 Store will be Opening Soon. Proudly franchised by AruMyra Services Pvt Limited.</p> 
-  </div>
-</div>
-</body>
-</html>
+  <section>
+    <div class = "ost-multi-header">
+    <h2>AruMyra</h2>
+    <h3></h3>
+    </div>
+  </section>
+  <script>
+    function changeBg(){
+      
+      const images = [
+        'url("forestbridge.jpg")',
+        'url("Copen1.jpg")'
+      ]
 
-<script>
-// Set the date we're counting down to
+      const section = document.querySelector('section')
+      const bg = images[Math.floor(Math.random() * images.length)];
+      section.style.backgroundImage = bg;
+    }
+
+    setInterval(changeBg, 100)
+
+    // Set the date we're counting down to
 var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
 
 // Update the count down every 1 second
@@ -58,5 +59,20 @@ var countdownfunction = setInterval(function() {
 }, 1000);
 </script>
 
+	<img src="images/Copen1.jpg" alt="Copenhegan"width="1920" height="1080"/> 
+</body>
+<div class="bgimg">
+  <div class="topleft">
+    <p>www.AruMyra.com</p>
+  </div>
+  <div class="middle">
+    <h1>Site is under in construction</h1>
+    <hr>
+    <p id="demo" style="font-size:20px"></p>
+  </div>
+  <div class="bottomleft">
+    <p>© 2021-2023 Store will be Opening Soon. Proudly franchised by AruMyra Services Pvt Limited.</p> 
+  </div>
+</div>
 </body>
 </html>
